@@ -1,0 +1,10 @@
+Esse projeto é composto por duas classes: Cliente e servidor.
+
+Na Servidor: 
+O servidor escuta numa porta configurada por meio de uma constante em sua classe, onde a constante será utilizada pelo cliente para saber qual porta se conectar ao servidor, 
+assim o servidor inicia e fica em loop infinito, aguardando conexões de clientes nessa porta. Para cada cliente conectado, o servidor cria uma Thread para atender as requisições do cliente, 
+enquanto para cada mensagem recebida do cliente o servidor envia uma resposta de volta.
+
+Na Cliente:
+O cliente conecta na porta especificada na classe do servidor com endereço definido em uma constante na classe do cliente, assim usuário pode digitar mensagens que são enviadas ao servidor, 
+enquanto o cliente aguarda a resposta do servidor e a exibe na tela. A aplicação fica em loop até o usuário digitar "sair" para encerrar.
